@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}  
+
+body{
+background:#131418;    
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+font-family: 'poppins', sans-serif;
+}
+
+a{
+position:relative;  
+display:inline-block;
+padding:15px 30px;
+color:#90EE90;
+text-transform:uppercase;
+letter-spacing:4px;
+text-decoration:none;
+font-size:24px;
+overflow:hidden;
+transition:all .2s;
+cursor:pointer;
+}
+
+a span{
+position:absolute; 
+display:block;
+}
+
+a:hover{
+color:#131418;    
+background:#90EE90;
+box-shadow:0 0 10px #90EE90, 0 0 40px #90EE90, 0 0 80px #90EE90;
+transition-delay:1s;
+}
+
+a span:nth-child(1){
+top:0; 
+left:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(90deg,transparent,#90EE90);
+}
+
+a:hover span:nth-child(1){
+left:100%;
+transition:1s;
+}
+
+a span:nth-child(3) {
+bottom:0;
+right:-100%;
+width:100%;
+height:2px;
+background:linear-gradient(270deg, transparent, #90EE90);
+}
+
+a:hover span:nth-child(3) {
+right:100%;
+transition:1s;
+transition-delay:0.5s;
+}
+
+a span:nth-child(2){
+top:-100%;       
+right:0;
+width:2px;
+height:100%;
+background: linear-gradient(180deg, transparent, #90EE90);
+}
+
+a:hover span:nth-child(2) {
+        top:100%;
+        transition: 1s;
+        transition-delay:0.25s;
+}
+
+a span:nth-child(4) {
+bottom: -100%;
+left:0;
+width:2px;
+height:100%;
+background: linear-gradient(360deg, transparent, #90EE90);
+}
+
+a:hover span:nth-child(4) {
+bottom:100%;
+transition: 1s;
+transition-delay: 0.75s;
+}
